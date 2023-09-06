@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@200&family=Poppins&family=Splash&family=Urbanist:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #060606, #111111);
+}
+
+.calculator{
+    border: 3px solid #f9f5f5;
+    padding: 20px;
+    border-radius: 40px;
+    background: transparent;
+    box-shadow:10px 10px 1px  rgba(240, 238, 236, 0.1);
+
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 20%;
+    background: transparent;
+    color: #fff8f8;
+    font-size: 22px;
+    box-shadow: 8px 1px 2px  rgba(240, 238, 236, 0.1);
+    background-color: #0b0b0b;
+    cursor: pointer;
+}
+
+.equalBtn{
+    background-color: blue;
+}
+
+.operator{
+    font-weight: 500;
+    background: linear-gradient(45deg, #0b0b0b, #111111);
+    
+}
+
+.operator{
+    color: rgb(243, 237, 237);
+}
