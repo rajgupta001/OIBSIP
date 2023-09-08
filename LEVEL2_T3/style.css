@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@200&family=Playfair+Display&family=Poppins&family=Splash&family=Urbanist:wght@100&display=swap');
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #c9cfd3, #111111);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.app {
+       display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 480px;
+    margin: 20px ;
+    margin-top: 60px;
+    height: 650px;
+    margin-left: 550px;
+    padding: 20px;
+
+    border-radius:40px;
+    background-color: #bfd11f;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d; /* Enable 3D transformations */
+    background: linear-gradient(to right, #c9cfd3, #111111);
+}
+
+
+
+h1 {
+    color: #060606;
+    padding-top: 30px;
+    margin-top: -99px;
+}
+
+
+.task-input {
+    display: flex;
+    margin-bottom: 20px;
+  
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+ 
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    color: rgb(6, 6, 6);
+    background: linear-gradient(to right, #c9cfd3, #454242);
+}
+
+button#addTask {
+    background-color: #525253;
+    color: rgb(0, 0, 0);     
+    border: none;
+    border-radius: 3px;
+    font-size: 39px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button#addTask:hover {
+    background-color: #5e5c5c;
+}
+
+.task-list {
+    background: linear-gradient(to right, #c9cfd3, #111111);
+    /* border: 1px solid #333232; */
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 10px;   
+    box-shadow: -9px -9px 15px rgba(0, 0, 0, 0.1);
+   
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0e0e0e;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+    color: rgb(210, 203, 203);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #777;
+}
