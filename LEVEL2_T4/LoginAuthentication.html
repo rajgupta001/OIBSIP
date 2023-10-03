@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html >
+  <head>
+    <title>Login SignUp</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+          <button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+        </div>
+        
+        <form id="login" class="input-group" action="javascript:void(0);">
+          <div class="inp">
+            <img src="./Assets/user.png"><input type="text" id="email" class="input-field" placeholder="Username" style="width: 88%; border:none;" required="required">
+          </div>
+          <div class="inp">
+            <img src="./Assets/password.png"><input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required">
+          </div>
+          <input type="checkbox" class="check-box">Remember Password
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        
+        <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="Full Name" required="required">
+          <input type="email" class="input-field" placeholder="Email Address" required="required">
+          <input type="password" class="input-field" placeholder="Create Password" name="password" id="create-password" required="required">
+          <input type="password" class="input-field" placeholder="Confirm Password" name="password-confirm" id="confirm-password" required="required" pattern=".*\S.*" oninput="checkPasswordMatch()">
+          <span id="password-match-error" class="error-message"></span>                 
+          <input type="checkbox" class="check-box" id="chkAgree" required="required">I agree to the Terms & Conditions
+          <button type="submit" id="btnSubmit" class="submit-btn reg-btn">Register</button>
+      </form>
+      
+      </div>
+      <script type="text/javascript" src="./script.js"></script>
+  </body>
+  </html>
